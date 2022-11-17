@@ -89,13 +89,6 @@ a:visited {
    position: relative;
 }
 
-@media only screen and (max-width: 800px) {
-   .card {
-      width: 100%;
-      margin: 3% 1% 3% 1%;
-   }
-}
-
 .card-title {
    text-transform: uppercase;
    padding: 1%;
@@ -177,4 +170,41 @@ a:visited {
    text-align: center;
    margin-bottom: 1%;
    width: 100%;
+}
+
+/* Mobile Views */
+
+@media only screen and (max-width: 800px) {
+   .title {
+      font-size: 14pt;
+   }
+
+   .status {
+      font-size: 10pt;
+   }
+
+   .menu {
+      font-size: 10pt;
+   }
+
+   .card {
+      width: 100%;
+      margin: 3% 1% 3% 1%;
+   }
+
+   .project-info {
+      width: 100%;
+      margin: 3% 1% 3% 1%;
+   }
+
+   .project-img {
+      width: 100%;
+      margin: 3% 1% 3% 1%;
+   }
+}
+
+@media only screen and (max-width: 400px) {
+   .menu {
+      font-size: 8pt;
+   }
 }
