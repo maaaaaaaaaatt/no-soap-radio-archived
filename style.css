@@ -9,6 +9,11 @@ html body {
    box-sizing: content-box;
 }
 
+::selection {
+   background: pink;
+   color: ivory;
+ }
+
 body {
    background-color: ivory;
    font-family: GortonRegular, monospace;
@@ -219,6 +224,12 @@ td:last-child {
    .card {
       width: 100%;
       margin: 3% 1% 3% 1%;
+   }
+
+   .card-audio {
+      display: block;
+      padding: 2% 2%;
+      width: 94%;
    }
 
    .project-info {
