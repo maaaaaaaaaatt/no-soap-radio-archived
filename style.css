@@ -1,21 +1,180 @@
+@font-face {
+   font-family: GortonRegular;
+   src: url(fonts/GortonDigitalRegular.otf);
+}
+
+html body {
+   margin: 0;
+   padding: 0;
+   box-sizing: content-box;
+}
+
 body {
    background-color: ivory;
-   font-family: prestige-elite-std,monospace;
-   font-weight: 400;
-   font-style: normal;
+   font-family: GortonRegular, monospace;
 }
 
-.headerlogo {
-   width: 50%;
-   margin: 2% 0% 0% 2%;
+/* Globals */
+
+.header {
+   border-bottom: 1px solid black;
+   display: flex;
+   flex-direction: row;
+   padding: 1%;
 }
 
-.description {
+.title {
    font-size: 20pt;
-   font-weight: 100;
-   width: 50%;
-   margin: 2% 0% 0% 2%;
-   text-align: justify;
-   color: hotpink;
+   width: auto;
+   flex: auto;
+}
+
+.title a:hover {
+   text-decoration: none;
+}
+
+.status {
+   text-align: right;
+   font-size: 16pt;
+   width: fit-content;
+   line-height: 1.5;
+}
+
+.light {
+   height: 8px;
+   width: 8px;
+   background-color: orangered;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 0px 7px 3px 0px;
+}
+
+.menu {
+   padding: 0.5% 1%;
+   border-bottom: 1px solid black;
    text-transform: uppercase;
+   display: flex;
+   justify-content: space-between;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+a:visited {
+   color: black;
+}
+
+/* Homepage Stuff */
+
+.card-container {
+   width: 100%;
+   height: 100%;
+   display: inline-flex;
+   flex-wrap: wrap;
+   gap: 1%;
+}
+
+.card {
+   width: 48%;
+   height: 100%;
+   border: 1px solid black;
+   text-align: center;
+   margin: 3% 0 3% 1%;
+   position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+   .card {
+      width: 100%;
+      margin: 3% 1% 3% 1%;
+   }
+}
+
+.card-title {
+   text-transform: uppercase;
+   padding: 1%;
+   text-align: center;
+}
+
+.card-copy {
+   padding: 1%;
+}
+
+.card-audio {
+   display: block;
+   padding: 0 2%;
+   width: 94%;
+}
+
+.card-audio::-webkit-media-controls-panel {
+   background-color: ivory;
+   border: 1px solid black;
+}
+
+.card img {
+   width: 100%;
+   margin: 0;
+}
+
+/* Project Pages */
+
+.project-container {
+   width: 99%;
+   height: 100%;
+   display: inline-flex;
+   flex-wrap: wrap;
+   padding: 1%;
+}
+
+.project-info {
+   width: 50%;
+   height: auto;
+   border: 1px solid black;
+   border-right: none;
+   position: relative;
+}
+
+.project-copy {
+   padding: 1% 4%;
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+.project-audio {
+   display: block;
+   padding: 2% 2%;
+   width: 94%;
+}
+
+.project-audio::-webkit-media-controls-panel {
+   background-color: ivory;
+   border: 1px solid black;
+}
+
+.project-img {
+   width: 48%;
+   height: 100%;
+   border: 1px solid black;
+   text-align: center;
+   position: relative;
+}
+
+.project-img img {
+   width: 100%;
+}
+
+
+/* Feet */
+
+.footer {
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 1%;
+   width: 100%;
 }
