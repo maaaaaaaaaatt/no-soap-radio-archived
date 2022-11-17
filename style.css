@@ -12,7 +12,7 @@ html body {
 ::selection {
    background: pink;
    color: ivory;
- }
+}
 
 body {
    background-color: ivory;
@@ -123,19 +123,18 @@ a:visited {
 /* Project Pages */
 
 .project-container {
-   width: 99%;
+   width: 100%;
    height: 100%;
    display: inline-flex;
    flex-wrap: wrap;
-   padding: 1%;
 }
 
 .project-info {
-   width: 50%;
+   width: 49%;
    height: auto;
    border: 1px solid black;
-   border-right: none;
    position: relative;
+   margin: 3% 0 3% 1%;
 }
 
 .project-copy {
@@ -156,11 +155,12 @@ a:visited {
 }
 
 .project-img {
-   width: 48%;
+   width: 49%;
    height: 100%;
    border: 1px solid black;
    text-align: center;
    position: relative;
+   margin: 3% 0 3% 0%;
 }
 
 .project-img img {
@@ -232,13 +232,17 @@ td:last-child {
       width: 94%;
    }
 
+   .project-container {
+      width: 100vw;
+   }
+
    .project-info {
-      width: 100%;
+      width: 96%;
       margin: 3% 1% 3% 1%;
    }
 
    .project-img {
-      width: 100%;
+      width: 96%;
       margin: 3% 1% 3% 1%;
    }
 }
