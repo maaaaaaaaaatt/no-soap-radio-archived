@@ -28,6 +28,12 @@ body {
    padding: 1%;
 }
 
+h2 {
+   font-size: 16pt;
+   text-align: center;
+   margin-bottom: 0;
+}
+
 .title {
    font-size: 20pt;
    width: auto;
@@ -90,7 +96,7 @@ a:visited {
    height: 100%;
    border: 1px solid black;
    text-align: center;
-   margin: 3% 0 3% 1%;
+   margin: 1% 0 3% 1%;
    position: relative;
 }
 
