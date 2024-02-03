@@ -265,7 +265,7 @@ td:last-child {
    
  }
  
- @keyframes "blink" {
+ @keyframes blink {
    from, to {
      opacity: 0;
    }
@@ -283,7 +283,7 @@ td:last-child {
    }
  }
  
- @-webkit-keyframes "blink" {
+ @-webkit-keyframes blink {
    from, to {
      opacity: 0;
    }
@@ -292,7 +292,7 @@ td:last-child {
    }
  }
  
- @-ms-keyframes "blink" {
+ @-ms-keyframes blink {
    from, to {
      opacity: 0;
    }
@@ -301,7 +301,7 @@ td:last-child {
    }
  }
  
- @-o-keyframes "blink" {
+ @-o-keyframes blink {
    from, to {
      opacity: 0;
    }
