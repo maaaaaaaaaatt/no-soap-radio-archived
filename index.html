@@ -32,6 +32,7 @@
    <title>NO SOAP, RADIO</title>
    <link rel="shortcut icon" type="image/png" href="/img/blink.ico">
    <link rel="stylesheet" href="style.css">
+   <script src="/js/icecast-metadata-player-1.17.2.main.min.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,16 @@
       <div><a href="https://no-soap-radio.square.site/" target="blank">Store</a></div>
    </div>
 
-   <h2>NOW PLAYING:</h2>
+   <div class="menu">
+      <marquee scrollamount="5">NOW PLAYING: <span><a href="/pedals.html">WILLIAM MAJOR: PEDALS & PREACHERS</a></span></marquee>
+      
+      <audio class="header-audio" controls>
+         <source src="https://live.soulconnexionradio.com:1320/stream" type="audio/ogg">
+            Your browser does not support the audio tag.
+      </audio>
+   </div>
+
+   <h2>CURRENTLY:</h2>
 
    <div class="card-container">
 
